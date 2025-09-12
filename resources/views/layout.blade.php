@@ -61,7 +61,7 @@
                 <div class="app-brand demo">
                     <a href="index.html" class="app-brand-link">
                         <span class="app-brand-logo demo">
-                            <img src="{{ asset('assets/img/logo/images.jpeg') }}" alt="Logo Pillo" width="70" />
+                            <img src="{{ asset('assets/img/logo_pillo.png') }}" alt="Logo Pillo" width="70" />
                         </span>
                     </a>
 
