@@ -8,6 +8,10 @@ Route::get('/', function () {
     return view('layout');
     
 });
+Route::get('/employee', function () {
+    return view('employee');
+    
+});
 
 // Satu Kesatuan dari semua method untuk kebutuhan CRUD
 Route::resource('/reservation', ReservationController::class);
