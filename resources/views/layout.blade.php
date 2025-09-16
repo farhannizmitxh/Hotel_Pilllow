@@ -61,7 +61,7 @@
                 <div class="app-brand demo">
                     <a href="index.html" class="app-brand-link">
                         <span class="app-brand-logo demo">
-                            <img src="{{ asset('assets/img/logo_pillo.png') }}" alt="Logo Pillo" width="70" />
+                            <img src="{{ asset('assets/img/logo/logo_pillo1.png') }}" alt="Logo Pillo" width="70" />
                         </span>
                     </a>
 
@@ -138,7 +138,7 @@
                         </a>
                     </li>
                       <li class="menu-item">
-                        <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/app-email.html"
+                        <a href="/employee"
                             target="_blank" class="menu-link">
                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="9.001" cy="6" r="4" fill="currentColor"/><ellipse cx="9.001" cy="17.001" fill="currentColor" rx="7" ry="4"/><path fill="currentColor" d="M21 17c0 1.657-2.036 3-4.521 3c.732-.8 1.236-1.805 1.236-2.998c0-1.195-.505-2.2-1.239-3.001C18.962 14 21 15.344 21 17M18 6a3 3 0 0 1-4.029 2.82A5.7 5.7 0 0 0 14.714 6c0-1.025-.27-1.987-.742-2.819A3 3 0 0 1 18 6.001"/></svg>
                             &nbsp <div class="text-truncate" data-i18n="Email">Employee</div>
@@ -152,21 +152,21 @@
                         </a>
                     </li>
                       <li class="menu-item">
-                        <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/app-email.html"
+                        <a href="/facility"
                             target="_blank" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-envelope"></i>
                             <div class="text-truncate" data-i18n="Email">Facilities</div>
                         </a>
                     </li>
                       <li class="menu-item">
-                        <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/app-email.html"
+                        <a href="/facility"
                             target="_blank" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-envelope"></i>
                             <div class="text-truncate" data-i18n="Email">Facilities</div>
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/app-email.html"
+                        <a href="/facility"
                             target="_blank" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-envelope"></i>
                             <div class="text-truncate" data-i18n="Email">Facilities</div>

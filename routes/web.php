@@ -2,18 +2,29 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ReservationController;
+use App\Http\Controllers\FacilityController;
 
 Route::get('/', function () {
     return view('layout');
     
 });
+<<<<<<< HEAD
 Route::get('/guest', function () {
     return view('guest');
+=======
+Route::get('/employee', function () {
+    return view('employee');
+>>>>>>> a52d346decf97f382fd31aac64fac26753488696
     
 });
 
 // Satu Kesatuan dari semua method untuk kebutuhan CRUD
 Route::resource('/reservation', ReservationController::class);
+
+Route::get('/facility', function () {
+    return view('facility');
+    
+});
 
 // Menampilkan halaman utama
 // Route::get('/reservation', [ReservationController::class, 'index']);
