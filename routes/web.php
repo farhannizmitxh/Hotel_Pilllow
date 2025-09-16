@@ -8,13 +8,14 @@ Route::get('/', function () {
     return view('layout');
     
 });
-<<<<<<< HEAD
-Route::get('/guest', function () {
-    return view('guest');
-=======
+
 Route::get('/employee', function () {
     return view('employee');
->>>>>>> a52d346decf97f382fd31aac64fac26753488696
+    
+});
+
+Route::get('/guest', function () {
+    return view('guest');
     
 });
 
