@@ -111,3 +111,13 @@
   text-align: center;
   margin-top: 1rem;
 }
+div.dt-container div.dt-paging ul.pagination .page-link {
+    padding: .4809rem;
+    font-size: .9375rem;
+    line-height: 1.375;
+    border-radius: .375rem;
+}
+div.dt-container div.dt-paging ul.pagination {
+    margin: 2px 0;
+    flex-wrap: wrap;
+}
