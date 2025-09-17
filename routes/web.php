@@ -1,4 +1,4 @@
-<?php
+<<?php
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ReservationController;
@@ -8,6 +8,7 @@ use App\Http\Controllers\GuestController;
 
 Route::get('/', function () {
     return view('layout');
+<<<<<<< HEAD
     
 });
 
@@ -16,16 +17,26 @@ Route::resource('/guest', GuestController::class);
 Route::get('/employee', function () {
     return view('employee');
     
+=======
+>>>>>>> 18803e39c6c7a61297b39f93b6bd2dfc7c6466e7
 });
 
-// Satu Kesatuan dari semua method untuk kebutuhan CRUD
+Route::get('/guest', function () {
+    return view('guest');
+});
+
+Route::get('/employee', function () {
+    return view('employee');
+});
+
+// Resource route for CRUD operations
 Route::resource('/reservation', ReservationController::class);
 
 Route::get('/facility', function () {
     return view('facility');
-    
 });
 
+// Remove the extra closing brace below
 // Menampilkan halaman utama
 // Route::get('/reservation', [ReservationController::class, 'index']);
 // Menampilkan halaman edit dengan data reservation
