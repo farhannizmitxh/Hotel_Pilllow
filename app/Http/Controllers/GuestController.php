@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Reservation;
 use App\Models\Guest;
 use Illuminate\Http\Request;
 
@@ -12,7 +13,10 @@ class GuestController extends Controller
      */
     public function index()
     {
-        //
+      // Variabel Guests berisikan Model Guest yang diperintahkan untuk mengambil semua data pada tabel guest
+        $guests = Guest::all();
+        // $reservations = Reservation::where('guest_id', 1)->get();
+        return view('guest.index', compact('guests'));
     }
 
     /**
@@ -28,7 +32,8 @@ class GuestController extends Controller
      */
     public function store(Request $request)
     {
-        //
+           Guest::create($request->all());
+        return back();
     }
 
     /**

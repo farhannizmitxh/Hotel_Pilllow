@@ -295,254 +295,80 @@
                         </div>
                     </div>
                     </div>
-                                    <div class="col-xxl- mb-6 order-0">
+                          <div class="col-xxl- mb-6 order-0">
                     <div class="card shadow">
-                    <div class="card-header  text-white">
+                      <div class="card-header  text-white">
                         <h4 class="mb-0">Form Tamu</h4>
                     </div>
-                    <div class="card-body">
-                        <form id="guestForm">
-                        <div class="mb-3 mt-3">
-                            <label for="guestId" class="form-label mg-top">ID</label>
-                            <input type="text" class="form-control" id="guestId" required>
+                            <div class="card-body">
+                                <form id="GuestForm">
+                                <div class="mb-3 mt-3">
+                                    <form action="/reservation" methode="post">
+                                     @csrf
+                                    <label for="name" class="form-label mg-top">Nama</label>
+                                    <input type="text" class="form-control mb-2" name="Name"  required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="phone" class="form-label">Nomor Telepon</label>
+                                    <input type="text" class="form-control" id="guestName" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="identity_numberr" class="form-label">Nomor Identitas</label>
+                                    <input type="text" class="form-control" id="identityNumber" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="identity_photo" class="form-label">Foto Identitas</label>
+                                    <input type="file" class="form-control" id="identityPhoto" accept="image/*">
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <button type="submit" class="btn btn-success">Submit</button>
+                                    <button type="button" class="btn btn-warning" onclick="enableEdit()">Edit</button>
+                                </div>
+                                </form>
+                            </div>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="guestName" class="form-label">Nama</label>
-                            <input type="text" class="form-control" id="guestName" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="guestPhone" class="form-label">Nomor Telepon</label>
-                            <input type="tel" class="form-control" id="guestPhone" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="identityNumber" class="form-label">Nomor Identitas</label>
-                            <input type="text" class="form-control" id="identityNumber" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="identityPhoto" class="form-label">Foto Identitas</label>
-                            <input type="file" class="form-control" id="identityPhoto" accept="image/*">
-                        </div>
-                        <div class="d-flex justify-content-between">
-                            <button type="submit" class="btn btn-success">Submit</button>
-                            <button type="button" class="btn btn-warning" onclick="enableEdit()">Edit</button>
-                        </div>
-                        </form>
                     </div>
-                    </div>
-                </div>
-                </div>
               
                   <!-- / database -->
                       <div class="col-12 order-5">
-      <div class="card">
-        <div class="card-header d-flex align-items-center justify-content-between">
-          <div class="card-title mb-0">
-            <h5 class="m-0 me-2">On route vehicles</h5>
-          </div>
-          <div class="dropdown">
-            <button class="btn text-body-secondary p-0" type="button" id="routeVehicles" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="icon-base bx bx-dots-vertical-rounded icon-lg"></i>
-            </button>
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="routeVehicles">
-              <a class="dropdown-item" href="javascript:void(0);">Select All</a>
-              <a class="dropdown-item" href="javascript:void(0);">Refresh</a>
-              <a class="dropdown-item" href="javascript:void(0);">Share</a>
-            </div>
-          </div>
-        </div>
-        <div class="card-datatable">
-          <div id="DataTables_Table_0_wrapper" class="dt-container dt-bootstrap5 dt-empty-footer">
-            <div class="row mt-2 justify-content-between">
-                <div class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto my-0">
-            </div>
-                <div class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto my-0">
+                                  <div class="col-xxl- mb-6 order-0">
+                    <div class="table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Nama</th>
+                                    <th>Nomor Telepon</th>
+                                    <th>Nomor Identitas</th>
+                                    <th>Poto Identitas</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach ($guests as $guest)
+                                    <tr>
+                                        <td>{{ $loop->iteration }}</td>
+                                        <td>{{ $guest->code }}</td>
+                                        <td>{{ $guest->guest->name }}</td>
+                                        <td>{{ $guest->status }}</td>
+                                        <td>{{ $guest->voucher }}</td>
+                                        <td class="d-flex">
+                                            <a href="/reservation/{{ $guest->id }}/edit" class="btn btn-warning btn-sm">Edit</a>
+                                            &nbsp;
+                                            <form action="/reservation/{{ $guest->id }}" method="post">
+                                                @csrf
+                                                @method('delete')
+                                                <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-            </div>
-                <div class="justify-content-between dt-layout-table mt-n2 mb-3"><div class="d-md-flex justify-content-between align-items-center col-12 dt-layout-full col-md"><table class="dt-route-vehicles table table-sm dataTable dtr-column" id="DataTables_Table_0" aria-describedby="DataTables_Table_0_info" style="width: 100%;"><colgroup><col data-dt-column="1" style="width: 58px;"><col data-dt-column="2" style="width: 178.297px;"><col data-dt-column="3" style="width: 195.438px;"><col data-dt-column="4" style="width: 181.219px;"><col data-dt-column="5" style="width: 214.25px;"><col data-dt-column="6" style="width: 206.797px;"></colgroup>
-            <thead>
-              <tr><th data-dt-column="0" class="control dt-orderable-none dtr-hidden" rowspan="1" colspan="1" aria-label="" style="display: none;">
-                <span class="dt-column-title">
-                </span><span class="dt-column-order">
-                </span></th>
-                <th data-dt-column="1" rowspan="1" colspan="1" class="dt-select dt-orderable-none" aria-label="">
-                    <span class="dt-column-title"></span><span class="dt-column-order"></span><input class="form-check-input" type="checkbox" aria-label="Select all rows">
-                </th>
-                <th data-dt-column="2" rowspan="1" colspan="1" class="dt-orderable-asc dt-orderable-desc dt-ordering-asc" aria-sort="ascending" aria-label="location: Activate to invert sorting" tabindex="0">
-                    <span class="dt-column-title" role="button">ID</span><span class="dt-column-order"></span></th><th data-dt-column="3" rowspan="1" colspan="1" class="dt-orderable-asc dt-orderable-desc" aria-label="starting route: Activate to sort" tabindex="0">
-                    <span class="dt-column-title" role="button">NAMA</span><span class="dt-column-order"></span></th><th data-dt-column="4" rowspan="1" colspan="1" class="dt-orderable-asc dt-orderable-desc" aria-label="ending route: Activate to sort" tabindex="0">
-                    <span class="dt-column-title" role="button">Voucher</span><span class="dt-column-order"></span></th><th data-dt-column="5" rowspan="1" colspan="1" class="dt-orderable-asc dt-orderable-desc" aria-label="warnings: Activate to sort" tabindex="0">
-                    <span class="dt-column-title" role="button">Status</span><span class="dt-column-order"></span></th><th class="w-20 dt-orderable-asc dt-orderable-desc dt-type-numeric" data-dt-column="6" rowspan="1" colspan="1" aria-label="progress: Activate to sort" tabindex="0">
-                    <span class="dt-column-title" role="button">ACTION</span><span class="dt-column-order"></span></th></tr>
-            </thead><tbody><tr><td class="control dtr-hidden" tabindex="0" style="display: none;"></td><td class="dt-select"><input aria-label="Select row" class="form-check-input" type="checkbox"></td><td class="sorting_1">
-                  <div class="d-flex justify-content-start align-items-center user-name">
-                      <div class="avatar-wrapper">
-                          <div class="avatar me-4">
-                              <span class="avatar-initial rounded-circle bg-label-secondary">
-                                  <i class="icon-base bx bxs-truck icon-lg"></i>
-                              </span>
-                          </div>
-                      </div>
-                      <div class="d-flex flex-column">
-                          <a class="text-heading text-nowrap fw-medium" href="app-logistics-fleet.html">VOL-159145</a>
-                      </div>
-                  </div>
-              </td><td>
-                  <div class="text-body">
-                      Paris 19, France
-                  </div>
-              </td><td>
-                  <div class="text-body">
-                      Dresden, Germany
-                  </div>
-              </td><td>
-                  <span class="badge rounded bg-label-success">
-                      No Warnings
-                  </span>
-              </td><td class="dt-type-numeric">
-                  <div class="d-flex align-items-center">
-                      <div class="progress w-100" style="height: 8px;">
-                          <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                          </div>
-                      </div>
-                      <div class="text-body ms-3">60%</div>
-                  </div>
-              </td></tr><tr><td class="control dtr-hidden" tabindex="0" style="display: none;"></td><td class="dt-select"><input aria-label="Select row" class="form-check-input" type="checkbox"></td><td class="sorting_1">
-                  <div class="d-flex justify-content-start align-items-center user-name">
-                      <div class="avatar-wrapper">
-                          <div class="avatar me-4">
-                              <span class="avatar-initial rounded-circle bg-label-secondary">
-                                  <i class="icon-base bx bxs-truck icon-lg"></i>
-                              </span>
-                          </div>
-                      </div>
-                      <div class="d-flex flex-column">
-                          <a class="text-heading text-nowrap fw-medium" href="app-logistics-fleet.html">VOL-182964</a>
-                      </div>
-                  </div>
-              </td><td>
-                  <div class="text-body">
-                      Saintes, France
-                  </div>
-              </td><td>
-                  <div class="text-body">
-                      Roma, Italy
-                  </div>
-              </td><td>
-                  <span class="badge rounded bg-label-primary">
-                      Fuel Problems
-                  </span>
-              </td><td class="dt-type-numeric">
-                  <div class="d-flex align-items-center">
-                      <div class="progress w-100" style="height: 8px;">
-                          <div class="progress-bar" role="progressbar" style="width: 82%" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
-                          </div>
-                      </div>
-                      <div class="text-body ms-3">82%</div>
-                  </div>
-              </td></tr><tr><td class="control dtr-hidden" tabindex="0" style="display: none;"></td><td class="dt-select"><input aria-label="Select row" class="form-check-input" type="checkbox"></td><td class="sorting_1">
-                  <div class="d-flex justify-content-start align-items-center user-name">
-                      <div class="avatar-wrapper">
-                          <div class="avatar me-4">
-                              <span class="avatar-initial rounded-circle bg-label-secondary">
-                                  <i class="icon-base bx bxs-truck icon-lg"></i>
-                              </span>
-                          </div>
-                      </div>
-                      <div class="d-flex flex-column">
-                          <a class="text-heading text-nowrap fw-medium" href="app-logistics-fleet.html">VOL-276904</a>
-                      </div>
-                  </div>
-              </td><td>
-                  <div class="text-body">
-                      Aulnay-sous-Bois, France
-                  </div>
-              </td><td>
-                  <div class="text-body">
-                      Torino, Italy
-                  </div>
-              </td><td>
-                  <span class="badge rounded bg-label-warning">
-                      Temperature Not Optimal
-                  </span>
-              </td><td class="dt-type-numeric">
-                  <div class="d-flex align-items-center">
-                      <div class="progress w-100" style="height: 8px;">
-                          <div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                          </div>
-                      </div>
-                      <div class="text-body ms-3">30%</div>
-                  </div>
-              </td></tr><tr><td class="control dtr-hidden" tabindex="0" style="display: none;"></td><td class="dt-select"><input aria-label="Select row" class="form-check-input" type="checkbox"></td><td class="sorting_1">
-                  <div class="d-flex justify-content-start align-items-center user-name">
-                      <div class="avatar-wrapper">
-                          <div class="avatar me-4">
-                              <span class="avatar-initial rounded-circle bg-label-secondary">
-                                  <i class="icon-base bx bxs-truck icon-lg"></i>
-                              </span>
-                          </div>
-                      </div>
-                      <div class="d-flex flex-column">
-                          <a class="text-heading text-nowrap fw-medium" href="app-logistics-fleet.html">VOL-300198</a>
-                      </div>
-                  </div>
-              </td><td>
-                  <div class="text-body">
-                      West Palm Beach, USA
-                  </div>
-              </td><td>
-                  <div class="text-body">
-                      Dresden, Germany
-                  </div>
-              </td><td>
-                  <span class="badge rounded bg-label-danger">
-                      Ecu Not Responding
-                  </span>
-              </td><td class="dt-type-numeric">
-                  <div class="d-flex align-items-center">
-                      <div class="progress w-100" style="height: 8px;">
-                          <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                          </div>
-                      </div>
-                      <div class="text-body ms-3">90%</div>
-                  </div>
-              </td></tr><tr><td class="control dtr-hidden" tabindex="0" style="display: none;"></td><td class="dt-select"><input aria-label="Select row" class="form-check-input" type="checkbox"></td><td class="sorting_1">
-                  <div class="d-flex justify-content-start align-items-center user-name">
-                      <div class="avatar-wrapper">
-                          <div class="avatar me-4">
-                              <span class="avatar-initial rounded-circle bg-label-secondary">
-                                  <i class="icon-base bx bxs-truck icon-lg"></i>
-                              </span>
-                          </div>
-                      </div>
-                      <div class="d-flex flex-column">
-                          <a class="text-heading text-nowrap fw-medium" href="app-logistics-fleet.html">VOL-302781</a>
-                      </div>
-                  </div>
-              </td><td>
-                  <div class="text-body">
-                      Köln, Germany
-                  </div>
-              </td><td>
-                  <div class="text-body">
-                      Laspezia, Italy
-                  </div>
-              </td><td>
-                  <span class="badge rounded bg-label-info">
-                      Oil Leakage
-                  </span>
-              </td><td class="dt-type-numeric">
-                  <div class="d-flex align-items-center">
-                      <div class="progress w-100" style="height: 8px;">
-                          <div class="progress-bar" role="progressbar" style="width: 24%" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100">
-                          </div>
-                      </div>
-                      <div class="text-body ms-3">24%</div>
-                  </div>
-              </td></tr></tbody>
-          <tfoot></tfoot></table></div></div><div class="row mx-3 justify-content-between"><div class="d-md-flex justify-content-between align-items-center dt-layout-start col-md-auto me-auto my-0"><div class="dt-info" aria-live="polite" id="DataTables_Table_0_info" role="status">Showing 1 to 5 of 25 entries</div></div><div class="d-md-flex justify-content-between align-items-center dt-layout-end col-md-auto ms-auto my-0"><div class="dt-paging"><nav aria-label="pagination"><ul class="pagination"><li class="dt-paging-button page-item disabled"><button class="page-link previous" role="link" type="button" aria-controls="DataTables_Table_0" aria-disabled="true" aria-label="Previous" data-dt-idx="previous" tabindex="-1"><i class="icon-base bx bx-chevron-left scaleX-n1-rtl icon-18px"></i></button></li><li class="dt-paging-button page-item active"><button class="page-link" role="link" type="button" aria-controls="DataTables_Table_0" aria-current="page" data-dt-idx="0">1</button></li><li class="dt-paging-button page-item"><button class="page-link" role="link" type="button" aria-controls="DataTables_Table_0" data-dt-idx="1">2</button></li><li class="dt-paging-button page-item"><button class="page-link" role="link" type="button" aria-controls="DataTables_Table_0" data-dt-idx="2">3</button></li><li class="dt-paging-button page-item"><button class="page-link" role="link" type="button" aria-controls="DataTables_Table_0" data-dt-idx="3">4</button></li><li class="dt-paging-button page-item"><button class="page-link" role="link" type="button" aria-controls="DataTables_Table_0" data-dt-idx="4">5</button></li><li class="dt-paging-button page-item"><button class="page-link next" role="link" type="button" aria-controls="DataTables_Table_0" aria-label="Next" data-dt-idx="next"><i class="icon-base bx bx-chevron-right scaleX-n1-rtl icon-18px"></i></button></li></ul></nav></div></div></div></div>
-        </div>
-      </div>
-    </div>
+                     </div>
                     <!-- / Content -->
 
                     <!-- Footer -->

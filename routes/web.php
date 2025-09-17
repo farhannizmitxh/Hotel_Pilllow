@@ -3,19 +3,18 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\FacilityController;
+use App\Http\Controllers\GuestController;
+
 
 Route::get('/', function () {
     return view('layout');
     
 });
 
+Route::resource('/guest', GuestController::class);
+
 Route::get('/employee', function () {
     return view('employee');
-    
-});
-
-Route::get('/guest', function () {
-    return view('guest');
     
 });
 
