@@ -1,4 +1,4 @@
-<?php
+<<?php
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ReservationController;
@@ -6,21 +6,24 @@ use App\Http\Controllers\FacilityController;
 
 Route::get('/', function () {
     return view('layout');
-    
-});
-Route::get('/guest', function () {
-    return view('guest');
-    
 });
 
-// Satu Kesatuan dari semua method untuk kebutuhan CRUD
+Route::get('/guest', function () {
+    return view('guest');
+});
+
+Route::get('/employee', function () {
+    return view('employee');
+});
+
+// Resource route for CRUD operations
 Route::resource('/reservation', ReservationController::class);
 
 Route::get('/facility', function () {
     return view('facility');
-    
 });
 
+// Remove the extra closing brace below
 // Menampilkan halaman utama
 // Route::get('/reservation', [ReservationController::class, 'index']);
 // Menampilkan halaman edit dengan data reservation
