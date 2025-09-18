@@ -4,11 +4,14 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\FacilityController;
 use App\Http\Controllers\GuestController;
+use App\Http\Controllers\RoomController;
 
 
 Route::get('/', function () {
     return view('layout');
 });
+
+Route::resource('/room', RoomController::class);
 
 Route::resource('/guest', GuestController::class);
 

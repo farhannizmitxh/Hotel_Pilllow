@@ -9,7 +9,7 @@
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
     <title>
-        Pillo | Main
+        Pillo | Room
     </title>
 
     <meta name="description" content="" />
@@ -76,7 +76,7 @@
 
                 <ul class="menu-inner py-1">
                     <!-- Dashboards -->
-                    <li class="menu-item active open">
+                    <li class="menu-item ">
                         <a href="javascript:void(0);" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-home-smile"></i>
                             <div class="text-truncate" data-i18n="Dashboards">
@@ -133,40 +133,50 @@
                     <li class="menu-item">
                         <a href="/guest"
                             target="_blank" class="menu-link">
-                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="6" r="4" fill="currentColor"/><path fill="currentColor" d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5"/></svg>
-                          &nbsp <div class="text-truncate" data-i18n="Email">Guest</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <circle cx="12" cy="6" r="4" fill="currentColor" />
+                                <path fill="currentColor" d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5" />
+                            </svg>
+                            &nbsp <div class="text-truncate" data-i18n="Email">Guest</div>
                         </a>
                     </li>
-                      <li class="menu-item">
-                        <a href="/employee"
+                    <li class="menu-item">
+                        <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/app-email.html"
                             target="_blank" class="menu-link">
-                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="9.001" cy="6" r="4" fill="currentColor"/><ellipse cx="9.001" cy="17.001" fill="currentColor" rx="7" ry="4"/><path fill="currentColor" d="M21 17c0 1.657-2.036 3-4.521 3c.732-.8 1.236-1.805 1.236-2.998c0-1.195-.505-2.2-1.239-3.001C18.962 14 21 15.344 21 17M18 6a3 3 0 0 1-4.029 2.82A5.7 5.7 0 0 0 14.714 6c0-1.025-.27-1.987-.742-2.819A3 3 0 0 1 18 6.001"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <circle cx="9.001" cy="6" r="4" fill="currentColor" />
+                                <ellipse cx="9.001" cy="17.001" fill="currentColor" rx="7" ry="4" />
+                                <path fill="currentColor" d="M21 17c0 1.657-2.036 3-4.521 3c.732-.8 1.236-1.805 1.236-2.998c0-1.195-.505-2.2-1.239-3.001C18.962 14 21 15.344 21 17M18 6a3 3 0 0 1-4.029 2.82A5.7 5.7 0 0 0 14.714 6c0-1.025-.27-1.987-.742-2.819A3 3 0 0 1 18 6.001" />
+                            </svg>
                             &nbsp <div class="text-truncate" data-i18n="Email">Employee</div>
                         </a>
                     </li>
-                      <li class="menu-item">
+                    <li class="menu-item">
                         <a href="/reservation"
                             target="_blank" class="menu-link">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M7.75 2.5a.75.75 0 0 0-1.5 0v1.58c-1.44.115-2.384.397-3.078 1.092c-.695.694-.977 1.639-1.093 3.078h19.842c-.116-1.44-.398-2.384-1.093-3.078c-.694-.695-1.639-.977-3.078-1.093V2.5a.75.75 0 0 0-1.5 0v1.513C15.585 4 14.839 4 14 4h-4c-.839 0-1.585 0-2.25.013z"/><path fill="currentColor" fill-rule="evenodd" d="M22 12v2c0 3.771 0 5.657-1.172 6.828S17.771 22 14 22h-4c-3.771 0-5.657 0-6.828-1.172S2 17.771 2 14v-2c0-.839 0-1.585.013-2.25h19.974C22 10.415 22 11.161 22 12m-6 1.25a.75.75 0 0 1 .75.75v1.25H18a.75.75 0 0 1 0 1.5h-1.25V18a.75.75 0 0 1-1.5 0v-1.25H14a.75.75 0 0 1 0-1.5h1.25V14a.75.75 0 0 1 .75-.75" clip-rule="evenodd"/></svg>
-                           &nbsp  <div class="text-truncate" data-i18n="Email">Reservation</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M7.75 2.5a.75.75 0 0 0-1.5 0v1.58c-1.44.115-2.384.397-3.078 1.092c-.695.694-.977 1.639-1.093 3.078h19.842c-.116-1.44-.398-2.384-1.093-3.078c-.694-.695-1.639-.977-3.078-1.093V2.5a.75.75 0 0 0-1.5 0v1.513C15.585 4 14.839 4 14 4h-4c-.839 0-1.585 0-2.25.013z" />
+                                <path fill="currentColor" fill-rule="evenodd" d="M22 12v2c0 3.771 0 5.657-1.172 6.828S17.771 22 14 22h-4c-3.771 0-5.657 0-6.828-1.172S2 17.771 2 14v-2c0-.839 0-1.585.013-2.25h19.974C22 10.415 22 11.161 22 12m-6 1.25a.75.75 0 0 1 .75.75v1.25H18a.75.75 0 0 1 0 1.5h-1.25V18a.75.75 0 0 1-1.5 0v-1.25H14a.75.75 0 0 1 0-1.5h1.25V14a.75.75 0 0 1 .75-.75" clip-rule="evenodd" />
+                            </svg>
+                            &nbsp <div class="text-truncate" data-i18n="Email">Reservation</div>
                         </a>
                     </li>
-                      <li class="menu-item">
-                        <a href="/facility"
+                    <li class="menu-item  active open">
+                        <a href="/room"
                             target="_blank" class="menu-link">
-                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M18.444 18H5.556a3.6 3.6 0 0 1-.806-.092V19a.75.75 0 0 1-1.5 0v-1.849A3.55 3.55 0 0 1 2 14.444V12a2 2 0 1 1 4 0v1.2a.8.8 0 0 0 .8.8h10.4a.8.8 0 0 0 .8-.8V12a2 2 0 1 1 4 0v2.444a3.55 3.55 0 0 1-1.25 2.707V19a.75.75 0 0 1-1.5 0v-1.092a3.6 3.6 0 0 1-.806.092"/><path fill="currentColor" d="M4.007 9c.008-.328.027-.566.07-.78A4 4 0 0 1 7.22 5.077C7.606 5 8.07 5 9 5h6c.93 0 1.394 0 1.78.077a4 4 0 0 1 3.143 3.143c.043.214.062.452.07.78H20v1a2 2 0 0 0-2 2v1.2a.8.8 0 0 1-.8.8H6.8a.8.8 0 0 1-.8-.8V12a2 2 0 0 0-2-2V9z" opacity="0.5"/></svg>
-                            &nbsp  <div class="text-truncate" data-i18n="Email">Room</div>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M18.444 18H5.556a3.6 3.6 0 0 1-.806-.092V19a.75.75 0 0 1-1.5 0v-1.849A3.55 3.55 0 0 1 2 14.444V12a2 2 0 1 1 4 0v1.2a.8.8 0 0 0 .8.8h10.4a.8.8 0 0 0 .8-.8V12a2 2 0 1 1 4 0v2.444a3.55 3.55 0 0 1-1.25 2.707V19a.75.75 0 0 1-1.5 0v-1.092a3.6 3.6 0 0 1-.806.092"/><path fill="currentColor" d="M4.007 9c.008-.328.027-.566.07-.78A4 4 0 0 1 7.22 5.077C7.606 5 8.07 5 9 5h6c.93 0 1.394 0 1.78.077a4 4 0 0 1 3.143 3.143c.043.214.062.452.07.78H20v1a2 2 0 0 0-2 2v1.2a.8.8 0 0 1-.8.8H6.8a.8.8 0 0 1-.8-.8V12a2 2 0 0 0-2-2V9z" opacity="0.5"/></svg>
+                          &nbsp  <div class="text-truncate" data-i18n="Email">Room</div>
                         </a>
                     </li>
-                      <li class="menu-item">
-                        <a href="/facility"
+                    <li class="menu-item">
+                        <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/app-email.html"
                             target="_blank" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-envelope"></i>
                             <div class="text-truncate" data-i18n="Email">Facilities</div>
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="/facility"
+                        <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/app-email.html"
                             target="_blank" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-envelope"></i>
                             <div class="text-truncate" data-i18n="Email">Facilities</div>
@@ -271,38 +281,130 @@
                 <!-- Content wrapper -->
                 <div class="content-wrapper">
                     <!-- Content -->
-                    <div class="container-xxl flex-grow-1 container-p-y">
-                        @yield('content')
-                    </div>
-                    <!-- / Content -->
 
-                    <!-- Footer -->
-                    <footer class="content-footer footer bg-footer-theme">
-                        <div class="container-xxl">
-                            <div
-                                class="footer-container d-flex align-items-center justify-content-between py-4 flex-md-row flex-column">
-                                <div class="mb-2 mb-md-0">
-                                    &#169;
-                                    <script>
-                                        document.write(new Date().getFullYear());
-                                    </script>
-                                    , made with ❤️ by
-                                    <a href="" target="_blank" class="footer-link">Metschool</a>
+                    @yield('content')
+                    <div class="container-xxl flex-grow-1 container-p-y">
+                        <div class="row">
+                            <div class="col-xxl- mb-6 order-0">
+                                <div class="card">
+                                    <div class="d-flex align-items-start row">
+                                        <div class="col-sm-7">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-primary mb-3">Hi, GUEST !!</h5>
+                                                <p class="mb-6">You have done 72% more sales today.<br>Check your new badge in your profile.</p>
+
+                                                <a href="javascript:;" class="btn btn-sm btn-label-primary">View Badges</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5 text-center text-sm-left">
+                                            <div class="card-body pb-0 px-0 px-md-6">
+                                                <img src="../../assets/img/illustrations/man-with-laptop.png" height="175" class="scaleX-n1-rtl" alt="View Badge User">
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="col-xxl- mb-6 order-0  flex-grow-1 container-p-y ">
+                                <div class="card shadow">
+                                    <div class="card-header  text-white">
+                                        <h4 class="mb-0">Kamar</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="mb-3 mt-3">
+                                            <form action="/room" method="POST" enctype="multipart/form-data">
+                                                @csrf
+                                                <input type="text" name="name" class="form-control mb-4" placeholder="Room" required>
+                                                <select name="status" id="status" class="form-control mb-2" required>
+                                                        <option value="" hidden>Room Status</option>
+                                                        <option value="Available">Available</option>
+                                                        <option value="Occupied" >Occupied</option>
+                                                        <option value="Maintenance"> Maintenance</option>
+                                                        <option value="reserved">reserved </option>
+                                                    </select>
+                                                 <select name="room_category_id" id="room_category_id" class="form-select">
+                                                    <option value="" hidden>-- Pilih Room--</option>
+                                                    @foreach ($room_categories as $roomcat)
+                                                        <option value="{{ $roomcat->id }}" >{{ $roomcat->name }}</option>
+                                                    @endforeach
+                                                <input type="text" name="description" class="form-control mb-4" placeholder="Room Description" required>
+                                                <button type="submit" class="btn btn-success">Submit</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- / database -->
+                            <div class="col-xxl- mb-6 order-0">
+                                <div class="card shadow">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Room Name</th>
+                                                    <th>Room Status</th>
+                                                    <th>Room Category</th>
+                                                    <th>Description</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach ($room as $room)
+                                                <tr>
+                                                    <td>{{ $loop->iteration }}</td>
+                                                    <td>{{ $room->name }}</td>
+                                                    <td>{{ $room->status }}</td>
+                                                    <td>{{ $room->room_category_id }}</td>
+                                                    <td>{{ $room->description }}</td>
+                                                    <td class="d-flex text-center">
+                                                        <a href="/room/{{ $room->id }}/edit" class="btn btn-warning btn-sm">Edit</a>
+                                                        &nbsp;  &nbsp; 
+                                                        <form action="/room/{{ $room->id }}" method="post" class="mb-0">
+                                                            @csrf
+                                                            @method('delete')
+                                                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                                        </form>
+                                                    </td>
+                                                </tr>
+                                                @endforeach
+                                             </div>
+                                         </div>
+                                     </tbody>
+                                </table>
+                            </div>
                         </div>
-                    </footer>
-                    <!-- / Footer -->
-
-                    <div class="content-backdrop fade"></div>
+                    </div>
                 </div>
-                <!-- Content wrapper -->
-            </div>
-            <!-- / Layout page -->
-        </div>
+                <!-- / Content -->
 
-        <!-- Overlay -->
-        <div class="layout-overlay layout-menu-toggle"></div>
+                <!-- Footer -->
+                <footer class="content-footer footer bg-footer-theme">
+                    <div class="container-xxl">
+                        <div
+                            class="footer-container d-flex align-items-center justify-content-between py-4 flex-md-row flex-column">
+                            <div class="mb-2 mb-md-0">
+                                &#169;
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script>
+                                , made with ❤️ by
+                                <a href="" target="_blank" class="footer-link">Metschool</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- / Footer -->
+
+                <div class="content-backdrop fade"></div>
+            </div>
+            <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+    </div>
+
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
     </div>
     <!-- / Layout wrapper -->
 
