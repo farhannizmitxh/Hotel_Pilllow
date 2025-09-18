@@ -40,7 +40,10 @@
                     </form>
                 </div>
                 <div class="col-lg-8">
-                    <div class="table-responsive">
+                    <div class="card-body">
+                       <div class="row">
+                         <div class="col-6 col-lg-4">
+                          <div class="table-responsive">
                         <table class="table table-hover">
                             <thead>
                                 <tr>
@@ -72,7 +75,10 @@
                                     </tr>
                                 @endforeach
                             </tbody>
-                        </table>
+                              </table>
+                             </div>
+                          </div>
+                       </div>
                     </div>
                 </div>
             </div>

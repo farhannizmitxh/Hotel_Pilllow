@@ -8,22 +8,9 @@ use App\Http\Controllers\GuestController;
 
 Route::get('/', function () {
     return view('layout');
-<<<<<<< HEAD
-    
 });
 
 Route::resource('/guest', GuestController::class);
-
-Route::get('/employee', function () {
-    return view('employee');
-    
-=======
->>>>>>> 18803e39c6c7a61297b39f93b6bd2dfc7c6466e7
-});
-
-Route::get('/guest', function () {
-    return view('guest');
-});
 
 Route::get('/employee', function () {
     return view('employee');

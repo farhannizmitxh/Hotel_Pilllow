@@ -134,32 +134,42 @@
                     <li class="menu-item active open">
                         <a href="/guest"
                             target="_blank" class="menu-link">
-                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="12" cy="6" r="4" fill="currentColor"/><path fill="currentColor" d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5"/></svg>
-                          &nbsp <div class="text-truncate" data-i18n="Email">Guest</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <circle cx="12" cy="6" r="4" fill="currentColor" />
+                                <path fill="currentColor" d="M20 17.5c0 2.485 0 4.5-8 4.5s-8-2.015-8-4.5S7.582 13 12 13s8 2.015 8 4.5" />
+                            </svg>
+                            &nbsp <div class="text-truncate" data-i18n="Email">Guest</div>
                         </a>
                     </li>
-                      <li class="menu-item">
+                    <li class="menu-item">
                         <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/app-email.html"
                             target="_blank" class="menu-link">
-                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><circle cx="9.001" cy="6" r="4" fill="currentColor"/><ellipse cx="9.001" cy="17.001" fill="currentColor" rx="7" ry="4"/><path fill="currentColor" d="M21 17c0 1.657-2.036 3-4.521 3c.732-.8 1.236-1.805 1.236-2.998c0-1.195-.505-2.2-1.239-3.001C18.962 14 21 15.344 21 17M18 6a3 3 0 0 1-4.029 2.82A5.7 5.7 0 0 0 14.714 6c0-1.025-.27-1.987-.742-2.819A3 3 0 0 1 18 6.001"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <circle cx="9.001" cy="6" r="4" fill="currentColor" />
+                                <ellipse cx="9.001" cy="17.001" fill="currentColor" rx="7" ry="4" />
+                                <path fill="currentColor" d="M21 17c0 1.657-2.036 3-4.521 3c.732-.8 1.236-1.805 1.236-2.998c0-1.195-.505-2.2-1.239-3.001C18.962 14 21 15.344 21 17M18 6a3 3 0 0 1-4.029 2.82A5.7 5.7 0 0 0 14.714 6c0-1.025-.27-1.987-.742-2.819A3 3 0 0 1 18 6.001" />
+                            </svg>
                             &nbsp <div class="text-truncate" data-i18n="Email">Employee</div>
                         </a>
                     </li>
-                      <li class="menu-item">
+                    <li class="menu-item">
                         <a href="/reservation"
                             target="_blank" class="menu-link">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M7.75 2.5a.75.75 0 0 0-1.5 0v1.58c-1.44.115-2.384.397-3.078 1.092c-.695.694-.977 1.639-1.093 3.078h19.842c-.116-1.44-.398-2.384-1.093-3.078c-.694-.695-1.639-.977-3.078-1.093V2.5a.75.75 0 0 0-1.5 0v1.513C15.585 4 14.839 4 14 4h-4c-.839 0-1.585 0-2.25.013z"/><path fill="currentColor" fill-rule="evenodd" d="M22 12v2c0 3.771 0 5.657-1.172 6.828S17.771 22 14 22h-4c-3.771 0-5.657 0-6.828-1.172S2 17.771 2 14v-2c0-.839 0-1.585.013-2.25h19.974C22 10.415 22 11.161 22 12m-6 1.25a.75.75 0 0 1 .75.75v1.25H18a.75.75 0 0 1 0 1.5h-1.25V18a.75.75 0 0 1-1.5 0v-1.25H14a.75.75 0 0 1 0-1.5h1.25V14a.75.75 0 0 1 .75-.75" clip-rule="evenodd"/></svg>
-                           &nbsp  <div class="text-truncate" data-i18n="Email">Reservation</div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M7.75 2.5a.75.75 0 0 0-1.5 0v1.58c-1.44.115-2.384.397-3.078 1.092c-.695.694-.977 1.639-1.093 3.078h19.842c-.116-1.44-.398-2.384-1.093-3.078c-.694-.695-1.639-.977-3.078-1.093V2.5a.75.75 0 0 0-1.5 0v1.513C15.585 4 14.839 4 14 4h-4c-.839 0-1.585 0-2.25.013z" />
+                                <path fill="currentColor" fill-rule="evenodd" d="M22 12v2c0 3.771 0 5.657-1.172 6.828S17.771 22 14 22h-4c-3.771 0-5.657 0-6.828-1.172S2 17.771 2 14v-2c0-.839 0-1.585.013-2.25h19.974C22 10.415 22 11.161 22 12m-6 1.25a.75.75 0 0 1 .75.75v1.25H18a.75.75 0 0 1 0 1.5h-1.25V18a.75.75 0 0 1-1.5 0v-1.25H14a.75.75 0 0 1 0-1.5h1.25V14a.75.75 0 0 1 .75-.75" clip-rule="evenodd" />
+                            </svg>
+                            &nbsp <div class="text-truncate" data-i18n="Email">Reservation</div>
                         </a>
                     </li>
-                      <li class="menu-item">
+                    <li class="menu-item">
                         <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/app-email.html"
                             target="_blank" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-envelope"></i>
                             <div class="text-truncate" data-i18n="Email">Facilities</div>
                         </a>
                     </li>
-                      <li class="menu-item">
+                    <li class="menu-item">
                         <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/html/vertical-menu-template/app-email.html"
                             target="_blank" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-envelope"></i>
@@ -272,132 +282,121 @@
                 <!-- Content wrapper -->
                 <div class="content-wrapper">
                     <!-- Content -->
-                     
-                       @yield('content')
+
+                    @yield('content')
                     <div class="container-xxl flex-grow-1 container-p-y">
-                      <div class="row">
-                        <div class="col-xxl- mb-6 order-0">
-                    <div class="card">
-                        <div class="d-flex align-items-start row">
-                        <div class="col-sm-7">
-                            <div class="card-body">
-                            <h5 class="card-title text-primary mb-3">Hi, GUEST !!</h5>
-                            <p class="mb-6">You have done 72% more sales today.<br>Check your new badge in your profile.</p>
+                        <div class="row">
+                            <div class="col-xxl- mb-6 order-0">
+                                <div class="card">
+                                    <div class="d-flex align-items-start row">
+                                        <div class="col-sm-7">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-primary mb-3">Hi, GUEST !!</h5>
+                                                <p class="mb-6">You have done 72% more sales today.<br>Check your new badge in your profile.</p>
 
-                            <a href="javascript:;" class="btn btn-sm btn-label-primary">View Badges</a>
+                                                <a href="javascript:;" class="btn btn-sm btn-label-primary">View Badges</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-5 text-center text-sm-left">
+                                            <div class="card-body pb-0 px-0 px-md-6">
+                                                <img src="../../assets/img/illustrations/man-with-laptop.png" height="175" class="scaleX-n1-rtl" alt="View Badge User">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-5 text-center text-sm-left">
-                            <div class="card-body pb-0 px-0 px-md-6">
-                            <img src="../../assets/img/illustrations/man-with-laptop.png" height="175" class="scaleX-n1-rtl" alt="View Badge User">
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    </div>
-                          <div class="col-xxl- mb-6 order-0">
-                    <div class="card shadow">
-                      <div class="card-header  text-white">
-                        <h4 class="mb-0">Form Tamu</h4>
-                    </div>
-                            <div class="card-body">
-                                <form id="GuestForm">
-                                <div class="mb-3 mt-3">
-                                    <form action="/reservation" methode="post">
-                                     @csrf
-                                    <label for="name" class="form-label mg-top">Nama</label>
-                                    <input type="text" class="form-control mb-2" name="Name"  required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="phone" class="form-label">Nomor Telepon</label>
-                                    <input type="text" class="form-control" id="guestName" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="identity_numberr" class="form-label">Nomor Identitas</label>
-                                    <input type="text" class="form-control" id="identityNumber" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="identity_photo" class="form-label">Foto Identitas</label>
-                                    <input type="file" class="form-control" id="identityPhoto" accept="image/*">
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <button type="submit" class="btn btn-success">Submit</button>
-                                    <button type="button" class="btn btn-warning" onclick="enableEdit()">Edit</button>
-                                </div>
-                                </form>
-                            </div>
-                            </div>
-                        </div>
-                    </div>
-              
-                  <!-- / database -->
-                      <div class="col-12 order-5">
-                                  <div class="col-xxl- mb-6 order-0">
-                    <div class="table-responsive">
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th>#</th>
-                                    <th>Nama</th>
-                                    <th>Nomor Telepon</th>
-                                    <th>Nomor Identitas</th>
-                                    <th>Poto Identitas</th>
-                                    <th>Action</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach ($guests as $guest)
-                                    <tr>
-                                        <td>{{ $loop->iteration }}</td>
-                                        <td>{{ $guest->code }}</td>
-                                        <td>{{ $guest->guest->name }}</td>
-                                        <td>{{ $guest->status }}</td>
-                                        <td>{{ $guest->voucher }}</td>
-                                        <td class="d-flex">
-                                            <a href="/reservation/{{ $guest->id }}/edit" class="btn btn-warning btn-sm">Edit</a>
-                                            &nbsp;
-                                            <form action="/reservation/{{ $guest->id }}" method="post">
+                            <div class="col-xxl- mb-6 order-0  flex-grow-1 container-p-y ">
+                                <div class="card shadow">
+                                    <div class="card-header  text-white">
+                                        <h4 class="mb-0">Form Tamu</h4>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="mb-3 mt-3">
+                                            <form action="/guest" method="POST" enctype="multipart/form-data">
                                                 @csrf
-                                                @method('delete')
-                                                <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                                <input type="text" name="name" class="form-control mb-2" placeholder="Nama" required>
+                                                <input type="text" name="phone" class="form-control mb-2" placeholder="Nomor Telepon" required>
+                                                <input type="text" name="identity_number" class="form-control mb-2" placeholder="Nomor Identitas" required>
+                                                <input type="file" name="identity_photo" class="form-control mb-2" accept="image/*">
+                                                <button type="submit" class="btn btn-success">Submit</button>
+                                                   
                                             </form>
-                                        </td>
-                                    </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                     </div>
-                    <!-- / Content -->
-
-                    <!-- Footer -->
-                    <footer class="content-footer footer bg-footer-theme">
-                        <div class="container-xxl">
-                            <div
-                                class="footer-container d-flex align-items-center justify-content-between py-4 flex-md-row flex-column">
-                                <div class="mb-2 mb-md-0">
-                                    &#169;
-                                    <script>
-                                        document.write(new Date().getFullYear());
-                                    </script>
-                                    , made with ❤️ by
-                                    <a href="" target="_blank" class="footer-link">Metschool</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+
+                            <!-- / database -->
+                            <div class="col-xxl- mb-6 order-0">
+                                <div class="card shadow">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Nama</th>
+                                                    <th>Nomor Telepon</th>
+                                                    <th>Nomor Identitas</th>
+                                                    <th>Poto Identitas</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                @foreach ($guests as $guest)
+                                                <tr>
+                                                    <td>{{ $loop->iteration }}</td>
+                                                    <td>{{ $guest->name }}</td>
+                                                    <td>{{ $guest->phone }}</td>
+                                                    <td>{{ $guest->identity_number }}</td>
+                                                    <td>{{ $guest->identity_photo }}</td>
+                                                    <td class="d-flex text-center">
+                                                        <a href="/guest/{{ $guest->id }}/edit" class="btn btn-warning btn-sm">Edit</a>
+                                                        &nbsp;  &nbsp; 
+                                                        <form action="/guest/{{ $guest->id }}" method="post" class="mb-0">
+                                                            @csrf
+                                                            @method('delete')
+                                                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                                                        </form>
+                                                    </td>
+                                                </tr>
+                                                @endforeach
+                                             </div>
+                                         </div>
+                                     </tbody>
+                                </table>
+                            </div>
                         </div>
-                    </footer>
-                    <!-- / Footer -->
-
-                    <div class="content-backdrop fade"></div>
+                    </div>
                 </div>
-                <!-- Content wrapper -->
-            </div>
-            <!-- / Layout page -->
-        </div>
+                <!-- / Content -->
 
-        <!-- Overlay -->
-        <div class="layout-overlay layout-menu-toggle"></div>
+                <!-- Footer -->
+                <footer class="content-footer footer bg-footer-theme">
+                    <div class="container-xxl">
+                        <div
+                            class="footer-container d-flex align-items-center justify-content-between py-4 flex-md-row flex-column">
+                            <div class="mb-2 mb-md-0">
+                                &#169;
+                                <script>
+                                    document.write(new Date().getFullYear());
+                                </script>
+                                , made with ❤️ by
+                                <a href="" target="_blank" class="footer-link">Metschool</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <!-- / Footer -->
+
+                <div class="content-backdrop fade"></div>
+            </div>
+            <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+    </div>
+
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
     </div>
     <!-- / Layout wrapper -->
 
