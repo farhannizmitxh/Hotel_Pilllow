@@ -22,9 +22,8 @@ Route::get('/employee', function () {
 // Resource route for CRUD operations
 Route::resource('/reservation', ReservationController::class);
 
-Route::get('/facility', function () {
-    return view('facility');
-});
+Route::resource('/facility', FacilityController::class);
+
 
 // Remove the extra closing brace below
 // Menampilkan halaman utama
