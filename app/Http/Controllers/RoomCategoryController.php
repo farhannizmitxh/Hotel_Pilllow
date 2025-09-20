@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Facility;
 use App\Models\RoomCategory;
 use Illuminate\Http\Request;
 
@@ -12,7 +13,9 @@ class RoomCategoryController extends Controller
      */
     public function index()
     {
-        //
+        $RoomCategorys = RoomCategory::all();
+        return view("room_category.index",  compact("RoomCategorys"));
+
     }
 
     /**
@@ -20,7 +23,7 @@ class RoomCategoryController extends Controller
      */
     public function create()
     {
-        //
+       //
     }
 
     /**
@@ -28,13 +31,15 @@ class RoomCategoryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // dd($request->all());
+         RoomCategory::create($request->all());
+        return back();
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(RoomCategory $roomCategory)
+    public function show(RoomCategory $RoomCategory)
     {
         //
     }
@@ -42,7 +47,7 @@ class RoomCategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(RoomCategory $roomCategory)
+    public function edit(RoomCategory $RoomCategory)
     {
         //
     }
@@ -50,7 +55,7 @@ class RoomCategoryController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, RoomCategory $roomCategory)
+    public function update(Request $request, RoomCategory $RoomCategory)
     {
         //
     }
@@ -58,7 +63,7 @@ class RoomCategoryController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(RoomCategory $roomCategory)
+    public function destroy(RoomCategory $RoomCategory)
     {
         //
     }

@@ -5,6 +5,7 @@ use App\Http\Controllers\ReservationController;
 use App\Http\Controllers\FacilityController;
 use App\Http\Controllers\GuestController;
 use App\Http\Controllers\RoomController;
+use App\Http\Controllers\RoomCategoryController;
 
 
 Route::get('/', function () {
@@ -18,6 +19,12 @@ Route::resource('/guest', GuestController::class);
 Route::get('/employee', function () {
     return view('employee');
 });
+
+
+Route::resource('/room_category', RoomCategoryController::class);
+
+
+
 
 // Resource route for CRUD operations
 Route::resource('/reservation', ReservationController::class);
