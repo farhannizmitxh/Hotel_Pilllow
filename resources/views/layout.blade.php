@@ -169,7 +169,7 @@
                         <a href="/room_category"
                             target="_blank" class="menu-link">
                             <i class="menu-icon tf-icons bx bx-envelope"></i>
-                            <div class="text-truncate" data-i18n="Email">Belum ada</div>
+                            <div class="text-truncate" data-i18n="Email">Room Category</div>
                         </a>
                     </li>
                 </ul>
