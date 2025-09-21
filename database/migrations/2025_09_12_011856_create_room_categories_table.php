@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('room_categories', function (Blueprint $table) {
             $table->id();
-            $table->string('name', 15);
-            $table->integer('price');
+            $table->string('name',)->nullable();
+            $table->integer('price')->default(0);
             $table->string('room_size')->nullable();
-            $table->integer('capacity');
+            $table->integer('capacity')->default(0);
             $table->enum('bed_setup', ['single', 'double', 'twin', 'suite']);
             $table->timestamps();
         });

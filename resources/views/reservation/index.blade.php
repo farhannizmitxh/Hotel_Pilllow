@@ -15,7 +15,7 @@
         </div>
         <div class="card-body">
             <div class="row">
-                <div class="col-6 col-lg-4">
+                <div class="ccol-xxl- mb-3 order-0  flex-grow-1 container-p-y">
                     <form action="/reservation" method="post">
                         @csrf
                         <input type="text" class="form-control mb-2" name="code" placeholder="Masukkan Kode Reservasi"
@@ -35,16 +35,14 @@
                         </select>
                         <input type="text" class="form-control mb-2" name="voucher" placeholder="Masukkan Kode Voucher">
                         <div class="text-end">
-                            <button class="btn btn-primary btn-sm">Submit</button>
+                            <button class="btn btn-primary btn-lg">Submit</button>
                         </div>
                     </form>
                 </div>
-                <div class="col-lg-8">
+                <div class="col-xxl- mb-1 order-0  flex-grow-1 container-p-y">
                     <div class="card-body">
                        <div class="row">
-                         <div class="col-6 col-lg-4">
-                          <div class="table-responsive">
-                        <table class="table table-hover">
+                            <table class="table table-hover">
                             <thead>
                                 <tr>
                                     <th>#</th>
@@ -73,15 +71,14 @@
                                             </form>
                                         </td>
                                     </tr>
-                                @endforeach
-                            </tbody>
-                              </table>
-                             </div>
-                          </div>
-                       </div>
+                                @endforeach   
+                                </div>
+                          </tbody>
+                        </table>
                     </div>
-                </div>
+                 </div>
             </div>
         </div>
     </div>
+ </div>
 @endsection
