@@ -323,8 +323,8 @@
                                                     </select>
                                                  <select name="room_category_id" id="room_category_id" class="form-select">
                                                     <option value="" hidden>-- Pilih Room--</option>
-                                                    @foreach ($room_categories as $roomcat)
-                                                        <option value="{{ $roomcat->id }}" >{{ $roomcat->name }}</option>
+                                                    @foreach ($room_categories as $RomCat)
+                                                        <option value="{{ $RomCat->id }}" >{{ $RomCat->name }}</option>
                                                     @endforeach
                                                 <input type="text" name="description" class="form-control mb-4" placeholder="Room Description" required>
                                                 <button type="submit" class="btn btn-success">Submit</button>
@@ -350,7 +350,7 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                @foreach ($room as $room)
+                                                @foreach ($rooms as $room)
                                                 <tr>
                                                     <td>{{ $loop->iteration }}</td>
                                                     <td>{{ $room->name }}</td>

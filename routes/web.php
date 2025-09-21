@@ -20,13 +20,8 @@ Route::get('/employee', function () {
     return view('employee');
 });
 
-
 Route::resource('/room_category', RoomCategoryController::class);
 
-
-
-
-// Resource route for CRUD operations
 Route::resource('/reservation', ReservationController::class);
 
 Route::resource('/facility', FacilityController::class);

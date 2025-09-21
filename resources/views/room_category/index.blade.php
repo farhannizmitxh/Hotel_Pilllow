@@ -35,7 +35,7 @@
                 </div>
             </div>
             <div class="mb-4 row">
-                <label for="html5-email-input" class="col-md-2 col-form-label">Room_size</label>
+                <label for="html5-email-input" class="col-md-2 col-form-label">Room size</label>
                 <div class="col-md-10">
                     <input class="form-control" type="text" id="room_size" name="room_size" required>
                 </div>
@@ -55,9 +55,8 @@
                 <option value="twin">twin</option>
                 <option value="suite">suite</option>
             </select>
-
+             <button type="submit" class=" btn btn-primary align-content-end ms-auto">Tambah</button>
         </div>
-        <button type="submit" class=" btn btn-primary align-content-end ms-auto">Tambah</button>
     </form>
 
     <table class="table">
@@ -76,10 +75,7 @@
         <tbody>
 
 
-            @foreach ($RoomCategorys as $RC )
-
-
-
+            @foreach ($room_categories as $RC )
             <tr>
                 <td>{{ $loop->iteration }}</td>
                 <td>{{ $RC->name }}</td>

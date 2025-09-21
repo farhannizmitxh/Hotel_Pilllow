@@ -13,8 +13,8 @@ class RoomCategoryController extends Controller
      */
     public function index()
     {
-        $RoomCategorys = RoomCategory::all();
-        return view("room_category.index",  compact("RoomCategorys"));
+        $room_categories = RoomCategory::all();
+        return view("room_category.index",  compact("room_categories"));
 
     }
 
