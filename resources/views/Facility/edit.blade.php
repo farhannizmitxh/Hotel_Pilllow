@@ -33,7 +33,7 @@
                             <option value="Inventory">Inventory</option>
                         </select>
                         <div class="mb-2 mt-5 text-end">
-                            <button type="submit" class="btn btn-primary btn-sm">Edit</button>
+                            <button type="submit" class="btn btn-primary btn-sm">Submit</button>
                         </div>
                     </form>
                 </div>
