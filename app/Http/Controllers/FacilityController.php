@@ -47,7 +47,6 @@ class FacilityController extends Controller
      */
     public function edit(Facility $facility)
     {
-         $facility = Facility::all();
         return view('facility.edit', compact('facility'));
     }
 
@@ -56,7 +55,12 @@ class FacilityController extends Controller
      */
     public function update(Request $request, Facility $facility)
     {
-        //
+        $facility->name  = $request->name;
+        $facility->stok  = $request->stok;
+        $facility->type  = $request->type;
+        $facility->update();
+
+        return redirect('facility');
     }
 
     /**
@@ -64,6 +68,8 @@ class FacilityController extends Controller
      */
     public function destroy(Facility $facility)
     {
-        //
+        $facility->delete();
+
+        return back();
     }
 }
